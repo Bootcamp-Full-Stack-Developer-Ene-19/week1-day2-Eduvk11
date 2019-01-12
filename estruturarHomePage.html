@@ -4,22 +4,48 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Campus Boream</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <link rel="stylesheet" href="toggler.css">
+    <script src="toggler.js"></script>
 </head>
 <body>
         <header>
             <nav>
+                    <div class="dropdown">
                 <ul class="navbar">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Formacion</a></li>
+                    <li><a href="#" role="button" class="dropdown__btn" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+                            Formación
+                          </a>  <div class="dropdown__menu" aria-labelledby="dropdownMenuButton">
+                                <a href="#">Angular 7 + Animations</a>
+                                <a href="#">Angular 7 Avanzado</a>
+                                <a href="#">Docker + Kubernetes</a>
+                                <a href="#">NodeJS</a>
+                                <a href="#">CSS + Sass Avanzado</a>
+                                <a href="#">VueJS 2</a>
+                                <div aria-hidden="true" class="dropdown__menu--divider"></div>
+                                <a href="#">Bootcamp</a>
+                              </div></li>
                     <li><a href="#">Referencia</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
-            <form action="" class="search">
-                <label for="search">Buscar en Campus</label> 
-                <input type="search" id="search"> 
+            </div>
+            <form action="" class="Sugerencias">
+            
+                <div class="search" id="Sugerencias">
+                    <label for="Sugerencias" id="Sugerencias">Buscar en Campus</label>
+                    <input type="text" class="search__input" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown__menu" aria-labelledby="searchAutocomplete">
+                      <a href="#">Angular 7</a>
+                      <a href="#">Angular 7 + Animations</a>
+                      <a href="#">Angular 7 Avanzado</a>
+                      <div aria-hidden="true" class="dropdown__menu--divider"></div>
+                      <a href="#">Otros cursos de formación</a>
+                      <a href="#">Bootcamp</a>
+                    </div>
+                  </div> 
+               
                 <input type="submit" value="Buscar">
             </form> 
         </nav> 
