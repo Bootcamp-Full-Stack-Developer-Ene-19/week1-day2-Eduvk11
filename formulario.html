@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,76 +12,77 @@
             top :-9999px;
         }
     </style>
-    
+
 </head>
 
 <body>
-<form action="">
+    <form action="">
 
-  <fieldset>
-    <legend>Datos personales</legend>
-    <div>
-        <label for="name">Nombre</label>
-        <input type="text" name="" id="name">
-    </div>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" name="" id="name">
+            </div>
 
-    <div>
-        <label for="surname">Apellidos</label>
-        <input type="text" name="" id="surname">
-    </div>
-  
+            <div>
+                <label for="surname">Apellidos</label>
+                <input type="text" name="" id="surname">
+            </div>
 
-  <fieldset>
-    <p role="heading" id="sex">Sexo</p>
 
-    <div aria-labelledby="sex">
-        <input type="radio" name="sex" id="female">
-        <label for="female">Femenino</label>
-        <input type="radio" name="sex" id="male">
-        <label for="male">Masculino</label>
-    </div>
-  </fieldset>
-  <fieldset>
-      <p role="heading" id="document">Documento</p>
+            <fieldset>
+                <p role="heading" id="sex">Sexo</p>
 
-      <div aria-labelledby="document">
-          <label for="doc-type" class="sr-only">Tipo de documento</label>
+                <div aria-labelledby="sex">
+                    <input type="radio" name="sex" id="female">
+                    <label for="female">Femenino</label>
+                    <input type="radio" name="sex" id="male">
+                    <label for="male">Masculino</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <p role="heading" id="document">Documento</p>
 
-          <select name="" id="doc-type">
-              <option>Seleccionar tipo&hellip;</option>
-              <option value="DNI">DNI</option>
-              <option value="NIE">NIE</option>
-              <option value="Pasaporte">Pasaporte</option>
-          </select>
+                <div aria-labelledby="document">
+                    <label for="doc-type" class="sr-only">Tipo de documento</label>
 
-          <label for="doc-number" class="sr-only">Número de documento</label>
-          <input type="text" id="doc-number">
-      </div>
-  </fieldset>
-</fieldset>
-<fieldset>
-    <legend>Datos de contacto</legend>
-    <div>
-        <label for="phone">Telefono</label>
-        <input type="number" name="" id="phone">
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email">
-    </div>
-    <div>
-        <label for="wep">Sitio wep</label>
-        <input type="url" id="wep">
-    </div>
-</fieldset>
-<div>
-    <label for="message">Escrbe tu comentario</label>
-    <textarea  id="massage" cols="50" rows="6"></textarea>
-</div>
-<div>
-<button type="submit">Envia tu mensage</button>
-</div>
-</form>
-   
+                    <select name="" id="doc-type">
+                        <option>Seleccionar tipo&hellip;</option>
+                        <option value="DNI">DNI</option>
+                        <option value="NIE">NIE</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+
+                    <label for="doc-number" class="sr-only">Número de documento</label>
+                    <input type="text" id="doc-number">
+                </div>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <div>
+                <label for="phone">Telefono</label>
+                <input type="number" name="" id="phone">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="wep">Sitio wep</label>
+                <input type="url" id="wep">
+            </div>
+        </fieldset>
+        <div>
+            <label for="message">Escrbe tu comentario</label>
+            <textarea id="massage" cols="50" rows="6"></textarea>
+        </div>
+        <div>
+            <button type="submit">Envia tu mensage</button>
+        </div>
+    </form>
+
 </body>
+
 </html>

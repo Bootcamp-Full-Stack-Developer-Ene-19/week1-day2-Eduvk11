@@ -1,129 +1,157 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Campus Boream</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">  <link rel="stylesheet" href="toggler.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="toggler.css">
     <script src="toggler.js"></script>
 </head>
+
 <body>
-        <header>
-            <nav>
-                    <div class="dropdown">
-                <ul class="navbar">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#" role="button" class="dropdown__btn" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+    <header>
+        <nav class="navbar">
+            <ul class="list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li>
+                    <div class="dropdown"><a href="#" role="button" class="dropdown__btn" id="dropdownMenuButton"
+                            aria-haspopup="true" aria-expanded="false">
                             Formación
-                          </a>  <div class="dropdown__menu" aria-labelledby="dropdownMenuButton">
-                                <a href="#">Angular 7 + Animations</a>
-                                <a href="#">Angular 7 Avanzado</a>
-                                <a href="#">Docker + Kubernetes</a>
-                                <a href="#">NodeJS</a>
-                                <a href="#">CSS + Sass Avanzado</a>
-                                <a href="#">VueJS 2</a>
-                                <div aria-hidden="true" class="dropdown__menu--divider"></div>
-                                <a href="#">Bootcamp</a>
-                              </div></li>
-                    <li><a href="#">Referencia</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <form action="" class="Sugerencias">
-            
-                <div class="search" id="Sugerencias">
-                    <label for="Sugerencias" id="Sugerencias">Buscar en Campus</label>
-                    <input type="text" class="search__input" aria-haspopup="true" aria-expanded="false">
-                    <div class="dropdown__menu" aria-labelledby="searchAutocomplete">
-                      <a href="#">Angular 7</a>
-                      <a href="#">Angular 7 + Animations</a>
-                      <a href="#">Angular 7 Avanzado</a>
-                      <div aria-hidden="true" class="dropdown__menu--divider"></div>
-                      <a href="#">Otros cursos de formación</a>
-                      <a href="#">Bootcamp</a>
+                        </a>
+                        <div class="dropdown__menu" aria-labelledby="dropdownMenuButton">
+                            <a href="#">Angular 7 + Animations</a>
+                            <a href="#">Angular 7 Avanzado</a>
+                            <a href="#">Docker + Kubernetes</a>
+                            <a href="#">NodeJS</a>
+                            <a href="#">CSS + Sass Avanzado</a>
+                            <a href="#">VueJS 2</a>
+                            <div aria-hidden="true" class="dropdown__menu--divider"></div>
+                            <a href="#">Bootcamp</a>
+                        </div>
                     </div>
-                  </div> 
-               
-                <input type="submit" value="Buscar">
-            </form> 
-        </nav> 
-        </header><!--// termina class heder-->
+                </li>
+                <li><a href="#">Referencia</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <form action="" class="search">
+            <label for="search" class="search__label" id="search">Buscar en Campus</label>
+            <input type="text" role="searchbox" class="search__input" aria-haspopup="true" aria-expanded="false"
+                autocomplete="off">
+            <div class="dropdown__menu" aria-labelledby="searchAutocomplete">
+                <a href="#">Angular 7</a>
+                <a href="#">Angular 7 + Animations</a>
+                <a href="#">Angular 7 Avanzado</a>
+                <div aria-hidden="true" class="dropdown__menu--divider"></div>
+                <a href="#">Otros cursos de formación</a>
+                <a href="#">Bootcamp</a>
+            </div>
+            <button type="submit" class="search__button">Buscar</button>
+        </form>
 
-            <main>
-                <div class="intro">
-                <div class="intro-iner">
-                    
-                    <h1>¡Hola a todos!</h1>
+    </header>
+    <!--// termina class heder-->
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo, sapiente facere molestiae fugiat eligendi <strong> in iure tempora!</strong> Consectetur ex, autem amet maxime odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> 
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h1 class="container__heading">¡Hola a todos!</h1>
 
-                    <a href="#">Más información</a>
-                </div>
-                </div>
-            <!-- termina intro-->
+                <p class="container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+                    illo, sapiente facere
+                    molestiae fugiat eligendi <strong> in iure tempora!</strong> Consectetur ex, autem amet maxime
+                    odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit.</p>
 
-            <div class="container training">
-                <article class="col">
-              <h2><a href="#">Angular 7 + Animations</a>
-              </h2>
-              <img src="images/curso.png" alt=""> 
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, laboriosam. Animi magnam perferendis mollitia hic sint ullam temporibus soluta tempore neque aut ipsam dicta autem, debitis reiciendis, deleniti magni velit.</p>
-                </div>
+                <a href="#" class="container__link">Más información</a>
+            </div>
+        </section>
+        <!-- termina intro-->
+
+        <div class="container training">
+            <article class="col">
+                <h2 class="col__headig"><a href="#">Angular 7 + Animations</a></h2>
+                <img src="images/curso.png" alt="" class="col__img">
+                <p class="col__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, laboriosam. Animi
+                    magnam perferendis
+                    mollitia hic sint ullam temporibus soluta tempore neque aut ipsam dicta autem, debitis reiciendis,
+                    deleniti magni velit.</p>
+            </article>
+
+            <article class="col">
+                <h2 class="col__heading"><a href="#">Docker + Kubernetes</a></h2>
+                <img src="images/curso.png" alt="" class="col__img">
+                <p class="col__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ea sapiente fuga
+                    vitae, sequi vel
+                    laudantium distinctio modi dolorum, necessitatibus dolorem quo voluptas porro quae ut quas eos
+                    numquam!
+                    Nemo?</p>
+            </article>
+            <article class="col">
+                <h2 col__heading><a href="">NodeJS</a></h2>
+                <img src="images/curso.png" alt="" class="col__img">
+                <p class="col__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam possimus quae
+                    natus, officia suscipit
+                    soluta iure hic esse vitae magni dignissimos, autem asperiores adipisci optio ducimus provident
+                    itaque
+                    eligendi eveniet.</p>
+            </article>
+        </div>
+        <!--//termina container-->
+
+        <article class="spot">
+            <div class="container">
                 <div class="col">
-              <h2><a href="#">Docker + Kubernetes</a></h2>
-              <img src="images/curso.png" alt="">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ea sapiente fuga vitae, sequi vel laudantium distinctio modi dolorum, necessitatibus dolorem quo voluptas porro quae ut quas eos numquam! Nemo?</p>
+                    <img src="images/video.png" alt="" class="col__video">
                 </div>
-                <div class="col">
-              <h2><a href="">NodeJS</a></h2>
-              <img src="images/curso.png" alt="">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam possimus quae natus, officia suscipit soluta iure hic esse vitae magni dignissimos, autem asperiores adipisci optio ducimus provident itaque eligendi eveniet.</p>
-                </div>
-            </div><!--//termina container-->
 
-            <article class="spot">
-              <div class="container">
                 <div class="col">
-                <img src="images/video.png" alt="">
+                    <h2 class="col__heading">Póximas convocatorias</h2>
+                    <p class="col__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure ipsa
+                        natus ratione, id
+                        beatae eligendi recusandae! Adipisci, libero minus minima, tempora blanditiis commodi id
+                        officia labore atque iusto cum.</p>
+                    <form action="" class="col__email">
+                        <label for="email">Indica tu correo electrónico</label>
+                        <input type="text" placeholder="Introduce un email válido" id="email">
+                        <button type="submit">Me apunto!</button>
+                    </form>
                 </div>
-              
-            <div class="col">
-                <h2>Póximas convocatorias</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure ipsa natus ratione, id beatae eligendi recusandae! Adipisci, libero minus minima, tempora blanditiis commodi id officia labore atque iusto cum.</p>
-                <form action="">
-                    <label for="email" autocomplete="off">Indica tu correo electrónico</label>
-                    <input type="text" placeholder="Introduce un email válido" id="email">
-                    <button type="submit">Me apunto!</button>
-                </form>     
-                </div> 
-              </div>  
-            </div><!--termina spot-->
+            </div>
+        </article>
+        <!--termina spot-->
+        <article class="service">
+            <h2 class="service__heading">Servicios de apoyo profesional</h2>
+            <p class="service__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ab veritatis
+                sint at fugit!
+                Repellendus delectus architecto qui ut ratione, itaque doloremque neque perferendis repellat quos
+                illo nam. Hic, maiores.</p>
+            <a href="#" class="service__link">Lorem ipsum</a>
+        </article>
+    </main>
+    <!--//termina service-->
 
-            <article class="service">
-                <h2>Servicios de apoyo profesional</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ab veritatis sint at fugit! Repellendus delectus architecto qui ut ratione, itaque doloremque neque perferendis repellat quos illo nam. Hic, maiores.</p>
-                <a href="#">Lorem ipsum</a>
-            </main><!--//termina service-->
+    <footer>
 
-            <footer>
-                <nav>
-                    <div class="col">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Formación</a></li>
-                    <li><a href="#">Referencia</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-                </div>
-                <div class="col">
-                <p>&copy;Company 2018</p>
-                </div>
-                </nav>
-        </footer><!--//termina el footer-->
-    
+        <div class="col">
+            <ul class="list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#"> Formación</a> </li>
+                <li><a href="#">Referencia</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <p class="col__text">&copy;Company 2018</p>
+        </div>
+    </footer>
+    <!--//termina el footer-->
 </body>
+
 </html>
