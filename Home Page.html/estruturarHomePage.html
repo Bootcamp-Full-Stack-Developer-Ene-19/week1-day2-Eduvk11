@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Campus Boream</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="toggler.css">
-    <script src="toggler.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/toggler.js"></script>
+
 </head>
 
-<body>
-    <header>
+<body class="body">
+    <header class="menu">
         <nav class="navbar">
-            <ul class="list">
+            <ul class="navbar__list">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Nosotros</a></li>
@@ -72,53 +73,47 @@
         </section>
         <!-- termina intro-->
 
-        <div class="container training">
-            <article class="col">
-                <h2 class="col__headig"><a href="#">Angular 7 + Animations</a></h2>
+        <div class="container-training">
+            <article class="col__training">
+                <h2 class="col__heading"><a href="#">Angular 7 + Animations</a></h2>
                 <img src="images/curso.png" alt="" class="col__img">
-                <p class="col__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, laboriosam. Animi
-                    magnam perferendis
-                    mollitia hic sint ullam temporibus soluta tempore neque aut ipsam dicta autem, debitis reiciendis,
-                    deleniti magni velit.</p>
+                <p class="col__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo,
+                    sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime
+                    odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
             </article>
 
-            <article class="col">
+            <article class="col__training">
                 <h2 class="col__heading"><a href="#">Docker + Kubernetes</a></h2>
                 <img src="images/curso.png" alt="" class="col__img">
-                <p class="col__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ea sapiente fuga
-                    vitae, sequi vel
-                    laudantium distinctio modi dolorum, necessitatibus dolorem quo voluptas porro quae ut quas eos
-                    numquam!
-                    Nemo?</p>
+                <p class="col__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo,
+                    sapiente facere molestiae fugiat eligendi quidem in iuretempora! Consectetur ex, autem amet maxime
+                    odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
             </article>
-            <article class="col">
-                <h2 col__heading><a href="">NodeJS</a></h2>
+            <article class="col__training">
+                <h2 class="col__heading"><a href="">NodeJS</a></h2>
                 <img src="images/curso.png" alt="" class="col__img">
-                <p class="col__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam possimus quae
-                    natus, officia suscipit
-                    soluta iure hic esse vitae magni dignissimos, autem asperiores adipisci optio ducimus provident
-                    itaque
-                    eligendi eveniet.</p>
+                <p class="col__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo,
+                    sapiente facere molestiae fugiat eligendi quidem in iuretempora! Consectetur ex, autem amet maxime
+                    odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur.</p>
             </article>
         </div>
         <!--//termina container-->
 
         <article class="spot">
-            <div class="container">
-                <div class="col">
+            <div class="spot__container">
+                <div class="sopt__col">
                     <img src="images/video.png" alt="" class="col__video">
                 </div>
 
-                <div class="col">
-                    <h2 class="col__heading">Póximas convocatorias</h2>
-                    <p class="col__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure ipsa
-                        natus ratione, id
-                        beatae eligendi recusandae! Adipisci, libero minus minima, tempora blanditiis commodi id
-                        officia labore atque iusto cum.</p>
-                    <form action="" class="col__email">
-                        <label for="email">Indica tu correo electrónico</label>
-                        <input type="text" placeholder="Introduce un email válido" id="email">
-                        <button type="submit">Me apunto!</button>
+                <div class="spot__col">
+                    <h2 class="spot__heading">Póximas convocatorias</h2>
+                    <p class="spot__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+                        illo, sapiente facere molestiae.
+                    </p>
+                    <form action="" class="spot__email">
+                        <label for="email" class="spot__label">Indica tu correo electrónico</label>
+                        <input type="text" placeholder="Introduce un email válido" id="email" class="spot__control">
+                        <button type="submit" class="spot__submit">Me apunto!</button>
                     </form>
                 </div>
             </div>
@@ -126,19 +121,21 @@
         <!--termina spot-->
         <article class="service">
             <h2 class="service__heading">Servicios de apoyo profesional</h2>
-            <p class="service__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ab veritatis
-                sint at fugit!
-                Repellendus delectus architecto qui ut ratione, itaque doloremque neque perferendis repellat quos
-                illo nam. Hic, maiores.</p>
+            <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem illo,
+                sapiente facere molestiae fugiat eligendi quidem in iure tempora! Consectetur ex, autem amet maxime
+                odit. Adipisci quod, tenetur reiciendis nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid maxime et esse aspernatur, natus quidem voluptas.
+            </p>
             <a href="#" class="service__link">Lorem ipsum</a>
+
         </article>
     </main>
     <!--//termina service-->
 
-    <footer>
+    <footer class="site-footer">
 
         <div class="col">
-            <ul class="list">
+            <ul class="list__footer">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Nosotros</a></li>
@@ -148,7 +145,7 @@
             </ul>
         </div>
         <div class="col">
-            <p class="col__text">&copy;Company 2018</p>
+            <p class="footer__text">&copy;Company 2018</p>
         </div>
     </footer>
     <!--//termina el footer-->
