@@ -1,15 +1,13 @@
 @import "Reset.css";
 @import "toggler.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 /*------// Termina import-------------------------------------------*/
-.body {
-    width: 1440px;
-    height: 1891px;
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .menu {
-    width: 1440px;
-    height: 56px;
     background-color: #4a4a4a;
     display: flex;
     justify-content: space-between;
@@ -30,7 +28,7 @@
 }
 
 .search {
-    color: white;
+    color: #ffffff;
 }
 
 .search__input {
@@ -45,7 +43,6 @@
     width: 79px;
     height: 37px;
     border-radius: 4px;
-    font-family: HelveticaNeue;
     font-size: 16px;
     font-weight: 500;
     background-color: #ffe55d;
@@ -63,9 +60,7 @@
 
 /*-------------------//Termina header---------------------------*/
 .intro {
-    font-family: HelveticaNeue;
     color: black;
-    width: 1440px;
     height: 382px;
     background-color: #efefef;
 }
@@ -75,20 +70,27 @@
     min-height: 73px;
     font-size: 62px;
     font-weight: 300;
-    margin-top: 61px;
+    padding-top: 61px;
     margin-left: 95px;
+    margin-bottom: 19px;
 
 }
 
 .container__text {
-    width: 1440px;
     height: 382px;
     width: 833px;
     height: 95px;
     font-size: 18px;
     font-weight: 300;
+    line-height: 1.5;
     margin-top: 19px;
     margin-left: 97px;
+    margin-bottom: 12px;
+    color: #333333;
+}
+
+span {
+    font-weight: bold;
 }
 
 .container__link {
@@ -99,52 +101,59 @@
     padding: 15px 19px 18px;
     margin-top: 12px;
     margin-left: 96px;
+    color: white;
+    text-decoration: none;
 }
 
 /*--------------//Termina intro-------------------*/
 .container-training {
-    width: 1440px;
-    height: 374px;
-    background-color: white;
     display: flex;
     align-items: center;
+    padding: 64px 98px 69px 94px;
+}
+
+.col__training::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col__heading {
+    margin-bottom: 20px;
 }
 
 .col__training {
-    margin-left: 100px;
+    margin-right: 13px;
+}
+
+.col__img>.col__text {
+    margin-right: 31px;
 }
 
 .col__heading a {
     min-width: 261px;
     height: 31px;
-    font-family: HelveticaNeue;
     font-size: 26px;
-    margin-top: 64px;
-    margin-left: 94px;
-    margin-bottom: 20px;
+    font-weight: 300;
     color: #4a90e2;
+}
+
+.col__img {
+    float: left;
+    margin: 0 13px 7px 0;
 }
 
 .col__text {
     min-width: 288px;
-    height: 116px;
-    font-family: HelveticaNeue;
+    min-height: 116px;
     font-size: 16px;
-    margin-left: 96px;
-    clear: both;
+    line-height: 1.69;
     color: black;
-}
-
-.col__img {
-    margin-top: 20px;
-    margin-left: 97px;
 }
 
 /*--------------------Termina training-----------------------*/
 .spot {
-    width: 1440px;
     height: 557px;
-    font-family: HelveticaNeue;
     background-color: #e8f6fc;
 }
 
@@ -155,7 +164,6 @@
 .spot__heading {
     min-width: 268px;
     height: 31px;
-    font-family: HelveticaNeue;
     font-size: 26px;
     font-weight: 300;
     margin-top: 106px;
@@ -169,6 +177,9 @@
     font-size: 16px;
     margin-top: 10px;
     margin-left: 37px;
+    margin-bottom: 37px;
+    line-height: 1.69;
+    float: left;
     color: black;
 }
 
@@ -213,6 +224,7 @@
 .col__video {
     margin-top: 101px;
     margin-left: 308px;
+    float: right;
 }
 
 .spot__email {
@@ -221,28 +233,26 @@
 
 /*---------------------------Termina spot----------------------*/
 .service {
-    width: 1440px;
-    height: 406px;
-    margin-top: 85px;
+    padding: 83px 200px 106px 200px;
     text-align: center;
     background-color: white;
+    display: block;
 }
 
 .service__heading {
     min-width: 447px;
     min-height: 40px;
-    font-family: HelveticaNeue;
     font-size: 34px;
     font-weight: 300;
+    padding-bottom: 28px;
     color: #4a4a4a;
 }
 
 .service__text {
-    min-width: 1040px;
-    min-height: 95px;
-    font-family: HelveticaNeue;
+    margin-bottom: 13px;
     font-size: 16px;
-    margin: 28px 200px 13px;
+    line-height: 1.69;
+    padding-bottom: 13px;
     color: black;
 }
 
@@ -252,7 +262,6 @@
     border-radius: 8px;
     width: 97px;
     height: 19px;
-    font-family: HelveticaNeue;
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
@@ -263,9 +272,9 @@
 
 /*-----------------------Termina service-----------------------*/
 .site-footer {
-    width: 1440px;
     height: 116px;
     display: flex;
+    justify-content: space-between;
     background-color: white;
 }
 
@@ -273,28 +282,28 @@
     display: flex;
     width: 38px;
     height: 18px;
-    margin-left: 97px;
-    margin-bottom: 83px;
-
 }
 
 .list__footer a {
     text-decoration: none;
-    margin-top: 15px;
-    margin-right: 38px;
-    font-family: HelveticaNeue;
     font-size: 16px;
     color: #4a90e2;
 }
 
+li>a {
+    margin-right: 38px;
+}
+
 .footer__text {
-    width: 111px;
-    height: 16px;
-    font-family: HelveticaNeue;
-    font-size: 14px;
+    min-width: 111px;
+    min-height: 16px;
     margin-right: 96px;
-    margin-bottom: 85px;
-    margin-left: 1100px;
+    font-size: 14px;
     color: #4a4a4a;
 }
+
+.list__footer {
+    margin-left: 97px;
+}
+
 /*-----------------------------Termina footer-------------------------------*/
